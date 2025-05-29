@@ -6,6 +6,8 @@
     <title>Harmeet Singh</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://img.icons8.com/material-two-tone/50/github.png">
+    <link rel="stylesheet" href="https://unpkg.com/:package@:version/:file">
+    
   </head>
   <body>
     <div class="line"></div>
@@ -14,20 +16,26 @@
       <div class="github"><img width="28px" height="28px" src="https://img.icons8.com/nolan/50/linkedin-circled.png" alt="linkedin-circled"/></div>
       <div class="github"><img width="28px" height="28px" src="https://img.icons8.com/nolan/50/email-sign.png" alt="email-sign"/></div>
     </div>
-
-    <nav>
-      <ul>
-        <li><a href="#home-one"><samp>#</samp> Home</a></li>
-        <li><a href="#projects"><samp>#</samp> Works</a></li>
-        <li><a href="#skills-paragraph-samp"><samp>#</samp> About-me</a></li>
-        <li><a href="#hating-contacts"><samp>#</samp> Contacts</a></li>
-        <li><a href=""><samp>#</samp> EN</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#home-one" class="navbar-link"> <Samp>#</Samp>    Home</a>
+        <a href="#projects" class="navbar-link"> <Samp>#</Samp> Projects</a>
+        <a href="#skills" class="navbar-link">   <Samp>#</Samp>  Skills</a>
+        <a href="#about-me" class="navbar-link"> <Samp>#</Samp>About Me</a>
+        <a href="#contact" class="navbar-link">  <Samp>#</Samp>   Contact</a>
+      </div>
     </nav>
+<Samp></Samp>
 
+    
+<!-- butt make  -->
 <section id="home-one">
 <div class="container-home">
-  <h1><samp style="color:#9c9fa3e8;">Harmeet singh is a</samp> <samp class="C-h">web designer</samp> <samp style="color: #9c9fa3e8;">and</samp><br /><samp class="C-h">front-end developer</samp></h1><br/>
+  <h1><samp>Harmeet singh is a</samp> <samp class="C-h">web designer</samp>
+    <samp style="color: #9c9fa3e8;">and</samp>
+    <br>
+    <samp class="C-h">front-end developer</samp></h1>
+    <br>
   <p> He crafts responsive websites where technologies <br/>meet creativity</p><br/>
   <a href="" id="contact-me">contact me !!</a>
   <!-- <button class="home-button" >contact me !!</button> -->
@@ -65,7 +73,6 @@
 </section>
 
 <section class="skills">
-
 <div class="skills-paragraph">
   <p><samp id="skills-paragraph-samp">#</samp>Skill</p>
 </div>
@@ -75,18 +82,15 @@
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/html-5.png" alt="html-5"/>
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/css3.png" alt="css3"/>
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/javascript.png" alt="javascript"/>
+          <img width="100" height="100" src="https://img.icons8.com/nolan/50/react-native.png" alt="react-native"  class="Roaming"/>
         </div>
-        
+
         <div class="container-skills-one">
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/ms-word.png" alt="ms-word"/>
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/my-sql.png" alt="my-sql"/>
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/sql.png" alt="sql"/>
           <img width="100" height="100" src="https://img.icons8.com/nolan/64/wordpress.png" alt="wordpress"/>
         </div>
-        
-        <!-- <div class="container-skills-two">
-        </div> -->
-
       </div>
 </section>
 
@@ -132,60 +136,58 @@
       </div>
     </section>
 
-  <section class="contact">
-    <div id="hating-contacts">
-      <h2><samp>#</samp>Contact</h2>
-    </div>
-    <div class="contact-box">
-      <div class="form-contact">
-        <form action="submit_form.php" method="post">
+<section class="contact">
+  <div id="hating-contacts">
+    <h2><samp>#</samp>Contact</h2>
+  </div>
+  <form class="contact-form" action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-          <label for="name" class="form-label-text">Name:</label>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-          <input type="text" id="name" name="name" required class="form-input"/>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
 
-          <label for="email" class="form-label-text">Email:</label>
+    <label for="query">Query:</label>
+    <textarea id="query" name="query" rows="4" required></textarea>
 
-          <input type="email" id="email" name="email" required class="form-input"/>
+    <button type="submit">Send</button>
+  </form>
+       
+</section>
 
-          <label for="message" class="form-label-text">Message:</label>
-
-          <textarea id="message" name="message" rows="4" required class="form-input-textarea">
-          </textarea>
-
-          <button type="submit" class="submit">Send</button>
-        </form>
-
-<div class="Send-me-message">
+<footer>
+ <!-- <div class="Send-me-message">
     <p class="message">message me</p>
+  </div> -->
+
 <div class="message-content">
-
   <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"/>
-  <h1>linkedin</h1>
+  <!-- <h1>linkedin</h1> -->
   </div>
-
+          
   <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new"/>
-  <h1>Instagram</h1>
+  <!-- <h1>Instagram</h1> -->
   </div>
-
+          
   <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/facebook-new.png" alt="facebook-new"/>
-  <h1>facebook</h1>
+    <!-- <h1>facebook</h1> -->
+  </div>
+          
+  <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/apple-mail.png" alt="apple-mail"/>
+  <!-- <h1>Email</h1> -->
   </div>
 
-  <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/apple-mail.png" alt="apple-mail"/>
-  <h1>Email</h1>
-  </div>
   <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/contact-card.png" alt="contact-card"/>
-  <h1>contact</h1> 
+    <!-- <h1>contact</h1>  -->
   </div>
 
   <div class="svg"><img width="64" height="64" src="https://img.icons8.com/nolan/64/location.png" alt="location">
-  <h1>location</h1> 
+    <!-- <h1>location</h1>  -->
   </div>
-
-</div>
-</div>
-</section>
-
+</footer>
+<script src="index.js"></script>
 </body>
 </html>
